@@ -1,0 +1,39 @@
+package pkg1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class A31 {
+
+	public static void main(String[] args) {
+		List<Integer>ascending_order=new ArrayList<>();
+		List<Integer>list1=new ArrayList<>();
+		List<Integer>list2=new ArrayList<>();
+		for(int i=0;i<5;i++) {
+		list1.add(i);
+		}
+		System.out.println(list1);
+		int min1=list1.get(0);
+		for(int i=0;i<5;i++) {
+			if(list1.get(i)<min1) {
+				min1=list1.get(i);
+			}
+		}
+		ascending_order.add(min1);
+		list1.remove(min1);
+		System.out.println(ascending_order);
+		System.out.println(list1);
+		
+		int min2=list1.get(0);
+	    for(int i=0;i<4;i++) {
+	    	if(list1.get(i)<min2) {
+	    		min2=list1.get(i);
+	    	}
+	    }
+	    ascending_order.add(min2);
+	    System.out.println(ascending_order);
+	    System.out.println(list1);
+		
+	}
+
+}

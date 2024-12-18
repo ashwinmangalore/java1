@@ -1,0 +1,26 @@
+package pkg2;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Random;
+
+public class A3 {
+
+	public static void main(String[] args) throws IOException {
+		Random rand1 = new Random();
+		FileWriter fw1 = new FileWriter("otp.txt");
+		int num1;
+		num1 = rand1.nextInt(100000,1000000);
+		fw1.write(num1);
+		fw1.write('\n');
+		num1 = rand1.nextInt(100000,1000000);
+		fw1.write(num1);
+		fw1.write('\n');
+		num1 = rand1.nextInt(100000,1000000);
+		fw1.write(num1);
+		fw1.write('\n');
+		fw1.close();
+
+	}
+
+}

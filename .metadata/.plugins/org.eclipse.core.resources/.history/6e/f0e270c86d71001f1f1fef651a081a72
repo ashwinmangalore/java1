@@ -1,0 +1,10 @@
+package pkg1;
+public class A18 {
+	public static void main(String[] args) {
+		String str1="Ashwin";
+		String str2="";
+		str2=str1.substring(4,5);
+		System.out.println(str2);
+		
+	}
+}

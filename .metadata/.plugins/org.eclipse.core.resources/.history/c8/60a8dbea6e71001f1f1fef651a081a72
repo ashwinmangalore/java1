@@ -1,0 +1,12 @@
+package pkg1;
+public class A18 {
+	public static void main(String[] args) {
+		String str1="Ashwin";
+		String str2="";
+		int len1=str1.length();
+		for(int i=1;i<7;i++) {
+			str2=str1.substring(len1-i,(len1+1)-i);
+			System.out.print(str2);		
+		}	
+	}
+}

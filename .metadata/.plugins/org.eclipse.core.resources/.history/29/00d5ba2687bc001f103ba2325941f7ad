@@ -1,0 +1,11 @@
+package pkg2;
+
+public class A2 {
+
+	public String printName1() {
+		return "Ash";
+	}
+	public String printName2(int name1) {
+		return name1;
+	}
+}
