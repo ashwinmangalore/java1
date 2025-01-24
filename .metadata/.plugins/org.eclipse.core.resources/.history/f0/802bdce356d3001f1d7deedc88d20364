@@ -1,0 +1,19 @@
+package pkg2;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class A12 {
+
+	public static void main(String[] args) {
+		String str1="ABC";
+		String s1;
+		List<String>list1=new ArrayList<>();
+		for(int i=1;i<3;i++){
+	    s1=str1.substring(0, i);
+		list1.add(s1);
+		}
+		System.out.print(list1);
+	}
+
+}

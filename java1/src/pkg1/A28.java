@@ -5,7 +5,7 @@ import java.util.List;
 public class A28 {
 
 	public static void main(String[] args) {
-		List<String>arr1=new ArrayList<String>();
+		List<String>arr1=new ArrayList<>();
 		for (int i=0;i<100;i++) 
 		{
 			arr1.add("C");

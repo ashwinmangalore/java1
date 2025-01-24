@@ -1,0 +1,29 @@
+package pkg2;
+
+public class A14 {
+
+	public static void main(String[] args) {
+		String s1="ABC";
+	    int n=s1.length();
+		int count=(int)Math.pow(2, n)-1;
+		String arr1[];
+		String out1[]=new String[count];
+		arr1=s1.split("");
+		
+		for(int i=0;i<3;i++) {
+			out1[i]=arr1[i];
+		}    
+		
+		out1[3]=arr1[0]+arr1[1];
+		out1[4]=arr1[1]+arr1[2];
+		out1[5]=arr1[2]+arr1[0];
+
+	    for(String i:out1) {
+	    	System.out.println(i);
+	    }
+	    System.out.println(Math.floor(-0.1));
+	    
+		
+	}
+
+}

@@ -1,0 +1,32 @@
+package pkg2;
+
+public class A13 {
+	int min;
+	public int number(int arr[]) {
+		int len1;
+		len1=arr.length;
+		for(int i=0;i<len1;i++) {
+			if(min>arr[i]) {
+				min=arr[i];
+			}
+		}
+		return min;
+	}
+
+	public int position(int arr[]) {
+		int len1;
+		int pos=0;
+		len1=arr.length;
+		for(int i=0;i<len1;i++) {
+			if(arr[i]==min) {
+				pos=i;
+			}
+		}
+		return pos;
+	}
+	public void main(String[] args) {
+		int arr[]= {1,2,3,-1,-2,-3};
+		System.out.println(position(arr));
+	}
+
+}

@@ -1,0 +1,15 @@
+package pkg2;
+
+public class A14 {
+
+	public static void main(String[] args) {
+		String s1="ABC";
+		String arr1[];
+		String out1[] = null;
+		arr1=s1.split("");
+	    out1[0]=arr1[0];
+		//2^n -1
+		
+	}
+
+}

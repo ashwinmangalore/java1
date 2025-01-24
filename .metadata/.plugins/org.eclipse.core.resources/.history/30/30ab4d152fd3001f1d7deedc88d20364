@@ -1,0 +1,23 @@
+package pkg2;
+
+import java.util.Arrays;
+
+public class A9 {
+
+	public static void main(String[] args) {
+		int arr1[]= {1,2,3,-1,-2,-3};
+		//1,-1,2,-2,3,-3
+		//arr1[o]  0<=i<=length
+		//compare arr1[0]+arr1[i]=0
+		int temp1=0;
+		Arrays.sort(arr1);
+		for(int i=0;i<6;i++) {
+			for(int j=0;j<3;j++) {
+		if(arr1[j]+arr1[i]==0) {
+			System.out.print(arr1[i]+","+arr1[j]+",");
+		}
+			}
+		}
+	}
+
+}

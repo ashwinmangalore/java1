@@ -1,0 +1,16 @@
+package pkg2;
+
+public class A13 {
+
+	public static void main(String[] args) {
+		int arr[]= {1,2,3,-1,-2,-3};
+		int i1=arr[0];
+		int i2=arr[1];
+		int i3=arr[2];
+		int i4=arr[3];
+		int i5=arr[4];
+		int i6=arr[5];
+
+	}
+
+}

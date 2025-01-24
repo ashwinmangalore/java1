@@ -1,0 +1,13 @@
+package pkg2;
+
+public class A12 {
+
+	public static void main(String[] args) {
+		String str1="ABC";
+		
+		for(int i=0;i<3;i++){
+		System.out.print(str1.charAt(i));
+		}
+	}
+
+}

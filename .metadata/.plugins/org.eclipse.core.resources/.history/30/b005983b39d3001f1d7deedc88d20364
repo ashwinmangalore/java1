@@ -1,0 +1,30 @@
+package pkg2;
+
+import java.util.Arrays;
+
+public class A9 {
+
+	public static void main(String[] args) {
+		int arr1[]= {1,-1,2,-3,3};
+		int arr2[];
+		int len1;
+	    int min=arr1[0];
+	    len1=arr1.length;	
+		//1,-1,2,-2,3,-3
+		//arr1[o]  0<=i<=length
+		//compare arr1[0]+arr1[i]=0
+		int temp1=0;
+		Arrays.sort(arr1);  // why didnt we create an object of class Array and then acess its methods?
+		for(int i=0;i<len1;i++) {
+			for(int j=0;j<(len1/2);j++) {
+		if(arr1[i]+arr1[j]==0) {
+			System.out.print(arr1[j]+","+arr1[i]+",");
+		}
+		else if((arr1[i]+arr1[j])!=0) {
+			System.out.print(arr1[i]);
+		}
+			}
+		}
+	}
+
+}

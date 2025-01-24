@@ -1,0 +1,42 @@
+package pkg2;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class A9 {
+
+	public static void main(String[] args) {
+		List<Integer>List1=new ArrayList<>();
+		List<Integer>arr1=new ArrayList<>();
+		arr1.add(1,-1,2,-2,3,4,-3,-4);
+		int len1;
+		int len2;
+	    len1=arr1.size();	
+		//1,-1,2,-2,3,-3
+		//arr1[o]  0<=i<=length
+		//compare arr1[0]+arr1[i]=0
+		arr1.sort(null);  // why didnt we create an object of class Array and then acess its methods?
+		for(int i=0;i<len1;i++) {
+			for(int j=0;j<(len1/2);j++) {
+		if(arr1.get(i)+arr1.get(j)==0) {
+			System.out.print(arr1.get(j)+","+arr1.get(i)+",");
+			List1.add(arr1.get(j));
+			List1.add(arr1.get(j));
+		}
+			}
+		}
+		len2=List1.size();
+		for(int i=0;i<len1;i++) {
+			for(int j=0;j<len2;j++) {
+				if(arr1.get(i)==List1.get(j)) {
+					arr1.remove(List1.get(j));
+					len1=arr1.size();
+				}
+			}	
+	}for(int i=0;i<len1;i++) {
+		System.out.println(arr1.get(i));
+	}
+
+}
+}

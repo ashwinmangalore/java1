@@ -1,0 +1,19 @@
+package pkg2;
+
+public class A11 {
+
+	public static void main(String[] args) {
+		int arr1[]= {-3,-2,-1,1,2,3};
+		int temp=0;
+		int len1;
+		len1=arr1.length;
+		temp=Math.abs(arr1[0]);
+	    for(int i=1;i<len1;i++) {
+	    	if(temp>Math.abs(arr1[i])) {
+				temp=Math.abs(arr1[i]);
+			}
+	    }
+		System.out.println(temp);
+	}
+
+}

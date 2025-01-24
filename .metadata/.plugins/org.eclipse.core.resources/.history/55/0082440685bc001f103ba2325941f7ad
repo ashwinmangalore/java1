@@ -1,8 +1,0 @@
-package pkg2;
-
-public class A2 {
-
-	public String printName1() {
-		return "Ash";
-	}
-}

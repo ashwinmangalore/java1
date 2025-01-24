@@ -1,0 +1,51 @@
+package pkg2;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class A15 {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		File f1=new File("cric1.csv");
+		Scanner sc1=new Scanner(f1);
+		String arr2[];
+		List<String>striker=new ArrayList<>();
+		List<Integer>runs=new ArrayList<>();//java collections(set,list) does not support primitive data type
+		Intger tRuns;
+		String s1;
+		String line1;
+		Integer len1=names.size();
+		for(int i=0;i<len1;i++) {
+			String ;
+		}
+		for(int i=0;i<21;i++) {
+			sc1.nextLine();
+		}
+		for(int i=0;i<22;i++) {
+			line1=sc1.nextLine();
+			String arr1[]=line1.split(",");
+			arr2[i]=arr1[3];
+		}
+		for(int i=0;i<28;i++) {
+			sc1.nextLine();
+		}
+		while(sc1.hasNext()) {
+			line1=sc1.nextLine();
+			String arr1[]=line1.split(",");
+			for(int i=0;i<len1;i++) {
+				if(names.get(i)==arr1[4]) {
+					Integer names.get(i)=arr1[7];
+				}	
+			}
+			striker.add(arr1[4]);
+			runs.add(Integer.parseInt(arr1[7]));//int, float,byte - primitive type ; Integer,Double etc - wrapper classes
+			
+		}
+		System.out.println(names);
+
+	}
+
+}

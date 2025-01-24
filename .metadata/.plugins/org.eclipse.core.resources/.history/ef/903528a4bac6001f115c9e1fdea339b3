@@ -1,0 +1,23 @@
+package pkg2;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class A7 {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		List<String>list1=new ArrayList<>();
+		File f1 = new File("dictionary.txt");
+		Scanner sc1 = new Scanner(f1);
+		String line1;
+		line1=sc1.nextLine();
+		list1.add(line1);
+		System.out.println(list1);
+		
+
+	}
+
+}
