@@ -22,7 +22,6 @@ public class A12 {
 			list1.add(arr[i]);
 		}	
 		System.out.print(list1);
-		System.out.println();
 	}
 
 }

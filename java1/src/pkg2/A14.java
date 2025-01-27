@@ -24,6 +24,7 @@ public class A14 {
 	    for(String i:out1) {
 	    	System.out.println(i);
 	    }
+	    System.out.println();
 	}
 
 }
