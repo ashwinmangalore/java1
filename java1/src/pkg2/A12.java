@@ -6,7 +6,7 @@ import java.util.List;
 public class A12 {
 
 	public static void main(String[] args) {
-		String str1="KISH";
+		String str1="ABC";
 		String[] arr = new String[7];
 		List<String>list1=new ArrayList<>();
 		for(int i=0;i<3;i++) {
